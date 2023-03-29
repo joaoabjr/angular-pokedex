@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
 import { PokeSearchComponent } from './components/poke-search/poke-search.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PokemonService } from './services/pokemon.service';
 
 @NgModule({
 	declarations: [
@@ -15,10 +17,15 @@ import { PokeSearchComponent } from './components/poke-search/poke-search.compon
 		HeaderComponent,
 		PokemonListComponent,
 		PokemonCardComponent,
-  PokeSearchComponent,
+		PokeSearchComponent,
 	],
-	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
-	providers: [],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		HttpClientModule,
+	],
+	providers: [HttpClientModule, PokemonService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
