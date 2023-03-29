@@ -1,10 +1,9 @@
-header {
+.poke-search {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
 	color: white;
-}
-header img {
-	margin: 10px;
+	border: 1px solid white;
+	width: 50%;
+	margin: 0 auto;
 }
