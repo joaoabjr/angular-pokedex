@@ -1,11 +1,11 @@
-<div class="pokemon-card">
+<div class="pokemon-card" *ngIf="pokemon">
 	<img
-		src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+		[src]="getPokemonImage(pokemon)"
 		alt="Pokemon image"
 		class="pokemon-card__image"
 	/>
 
-	<div class="pokemon-card__number">Nº {{ pokemon.number }}</div>
+	<div class="pokemon-card__number">Nº {{ getPokemonNumber(pokemon) }}</div>
 
 	<div class="pokemon-card__name">
 		<h4>{{ pokemon.name }}</h4>

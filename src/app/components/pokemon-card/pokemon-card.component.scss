@@ -21,6 +21,7 @@
 		border-radius: 5px;
 		background-color: #e4e4e4;
 		width: 38.4375%;
+		text-transform: capitalize;
 		&--grass {
 			background-color: #9bcc50;
 		}
@@ -211,6 +212,7 @@
 		text-transform: none;
 		font-size: 145%;
 		margin-bottom: 5px;
+		text-transform: capitalize;
 	}
 
 	&__number,

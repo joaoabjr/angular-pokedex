@@ -1,5 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { Pokemon } from 'src/app/model/Pokemon';
+import {
+	Pokemon,
+	getPokemonImage,
+	getPokemonNumber,
+} from 'src/app/model/Pokemon';
 
 @Component({
 	selector: 'app-pokemon-card',
@@ -9,4 +13,7 @@ import { Pokemon } from 'src/app/model/Pokemon';
 export class PokemonCardComponent {
 	@Input()
 	public pokemon!: Pokemon;
+
+	public getPokemonImage = getPokemonImage;
+	public getPokemonNumber = getPokemonNumber;
 }

@@ -9,26 +9,5 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 	styleUrls: ['./pokemon-list.component.scss'],
 })
 export class PokemonListComponent {
-	pokemons: Pokemon[] = [
-		{
-			name: 'Bulbasaur',
-			number: 0o1,
-			image: '',
-			types: [Type.Grass, Type.Poison],
-		},
-		{
-			name: 'Bulbasaur',
-			number: 0o1,
-			image: '',
-			types: [Type.Grass, Type.Poison],
-		},
-		{
-			name: 'Bulbasaur',
-			number: 0o1,
-			image: '',
-			types: [Type.Grass, Type.Poison],
-		},
-	];
-
 	constructor(public pokemonService: PokemonService) {}
 }
